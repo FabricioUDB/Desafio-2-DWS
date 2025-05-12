@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    height: 100vh;
+    background: linear-gradient(to right, #7f53ac, #647dee);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 90%;
+    height: 90%;
+    max-width: 1200px;
+    display: flex;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.left-panel {
+    width: 50%;
+    background: linear-gradient(135deg, #7f53ac, #647dee);
+    color: white;
+    padding: 80px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-panel h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.left-panel p {
+    font-size: 18px;
+    margin-bottom: auto;
+}
+
+.left-panel .branding {
+    margin-top: auto;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.right-panel {
+    width: 50%;
+    padding: 80px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-panel h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.right-panel h3 {
+    font-size: 20px;
+    color: #7f53ac;
+    margin-bottom: 10px;
+}
+
+.right-panel p {
+    margin-bottom: 30px;
+}
+
+form input {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+form .options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #7f53ac, #647dee);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    opacity: 0.9;
+}
+
+.create {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}

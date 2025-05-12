@@ -1,0 +1,52 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f9fafb;
+    padding: 40px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 28px;
+    color: #333;
+}
+
+.acciones {
+    display: flex;
+    gap: 10px;
+}
+
+.btn-back,
+.btn-exportar {
+    padding: 10px 20px;
+    font-size: 14px;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-back {
+    background: #ddd;
+    color: #333;
+}
+
+.btn-exportar {
+    background: #4a90e2;
+    color: white;
+}
+
+table.dataTable thead th {
+    background-color: #4a90e2;
+    color: white;
+}
