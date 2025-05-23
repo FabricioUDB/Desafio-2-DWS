@@ -4,7 +4,7 @@ require_once '../models/Usuario.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['login'])) {
     $username = $_POST['username'];
-    $password = md5($_POST['password']); // ⚠️ En producción usa password_hash
+    $password = $_POST['password']; // ⚠️ En producción usa password_hash
 
     $usuarioModel = new Usuario();
     $credencialesValidas = $usuarioModel->verificarCredenciales($username, $password);
@@ -16,4 +16,3 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['login'])) {
         echo "Credenciales inválidas.";
     }
 }
-
